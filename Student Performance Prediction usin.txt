@@ -1,0 +1,55 @@
+Student Performance Prediction using Machine Learning
+
+Machine Learning = Teaching computer to learn from data.
+
+Input: 
+	Study Hours
+	Attendance
+	Previous Scored Marks 
+
+Application will lean pattern and predict, Final Score 
+
+We are building a Regression Model.
+
+Create Virtual Environment: python -m venv venv
+Activate it: venv\Scripts\activate
+
+Install Libraries:
+pip install pandas numpy matplotlib seaborn scikit-learn flask
+
+pandas		Handle the DataSets
+numpy		Math Operation
+matplotlib	Graph Plotting
+seaborn		Advanced Graphs
+skikit_learn	Machine Learning
+flask		Web Application
+
+
+Student_Performance_Prediction
+|
+|---app.py
+|---data.csv
+|---results.csv
+|---templates/
+    |
+    |---index.html
+
+
+Flask Code Explanation:
+app = Flask(__name__)		#Creates Flask web server
+
+@app.route("/")			#when user visits website --> show homepage
+
+@app.route("/predict", methods=["POST"])	#When form is submitted → this function runs.
+
+request.form["hours"]		#Get input from HTML form.
+
+model.predict(input_data)	#Model predicts result.
+
+
+
+
+
+
+
+
